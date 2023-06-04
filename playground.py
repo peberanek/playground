@@ -1,3 +1,6 @@
+"""Sample script"""
+
+
 def main():
     print("Learning by playing!")
 
