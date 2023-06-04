@@ -2,7 +2,7 @@
 
 # Playground
 
-A playground for testing Python packaging and CI related stuff
+A playground for testing GitHub, Python packaging and CI related stuff
 
 ## Development
 
