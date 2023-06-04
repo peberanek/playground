@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "playground"
+version = "0.0.1"
+authors = [
+  { name = "Petr Beranek", email = "petrberanek.mail@gmail.com" },
+]
+description = "A playground for testing Python packaging and CI related stuff"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["CI", "automation", "packaging"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3.10",
+]
+
+[project.scripts]
+playground = "playground:main"
