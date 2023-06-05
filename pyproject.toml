@@ -19,3 +19,15 @@ classifiers = [
 
 [project.scripts]
 playground = "playground:main"
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/rules/
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "C90", # mccabe
+  "I",   # isort
+]
+# disable autofix; use e.g. "F" to skip a whole category
+unfixable = ["F401", "F841"]
