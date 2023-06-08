@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+shell='bash'
+venv_dir='./venv'
+activation_script="${venv_dir}/bin/activate"
+
+# Build
+echo "Building Python virtual environment at ${venv_dir}..."
+python3 -m venv --clear --upgrade-deps "${venv_dir}"
+source "${activation_script}"
+python3 -m pip install wheel
+python3 -m pip install --editable .
+
+# Shell completions
+echo "Adding shell completions..."
+echo -e '\n' >> "${activation_script}"
+invoke --print-completion-script="${shell}" >> "${activation_script}"
+echo -e '\n' >> "${activation_script}"
+echo "Done"

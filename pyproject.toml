@@ -16,6 +16,10 @@ classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python :: 3.10",
 ]
+dependencies = [
+  "invoke==2.1.2",
+  "pre-commit==3.3.2",
+]
 
 [project.scripts]
 playground = "playground:main"
