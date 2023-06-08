@@ -6,7 +6,16 @@ A playground for testing GitHub, Python packaging and CI related stuff
 
 ## Development
 
+Using Makefile:
 ```
 make venv
 source venv/bin/activate
+make linters
+```
+
+Or, using Invoke:
+```
+./build-venv
+source venv/bin/activate
+invoke linters
 ```
