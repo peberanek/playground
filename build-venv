@@ -9,7 +9,7 @@ echo "Building Python virtual environment at ${venv_dir}..."
 python3 -m venv --clear --upgrade-deps "${venv_dir}"
 source "${activation_script}"
 python3 -m pip install wheel
-python3 -m pip install --editable .
+python3 -m pip install --editable .[development]
 
 # Shell completions
 echo "Adding shell completions..."

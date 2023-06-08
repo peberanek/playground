@@ -14,4 +14,4 @@ venv:
 	python3 -m venv --clear --upgrade-deps ${venv_dir}
 	source ${venv_dir}/bin/activate \
 		&& ${pip_install} wheel \
-		&& ${pip_install} --editable .
+		&& ${pip_install} --editable .[development]
