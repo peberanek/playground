@@ -15,3 +15,9 @@ venv:
 	source ${venv_dir}/bin/activate \
 		&& ${pip_install} wheel \
 		&& ${pip_install} --editable .[development]
+
+.PHONY: publish
+publish:
+	rm -r dist/
+	python3 -m build
+	python3 -m twine upload --repository testpypi dist/*

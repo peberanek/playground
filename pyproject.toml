@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "playground"
+name = "peberanek-playground"
 version = "0.0.1"
 authors = [
   { name = "Petr Beranek", email = "petrberanek.mail@gmail.com" },
@@ -22,6 +22,8 @@ development = [
   "invoke==2.1.2",
   "pre-commit==3.3.1",
   "pytest==7.3.1",
+  "build==0.10.0",
+  "twine==4.0.2"
 ]
 
 [project.scripts]
