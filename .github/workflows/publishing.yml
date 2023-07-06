@@ -1,9 +1,11 @@
 name: Build & publish to TestPyPI
-# on:
-#   release:
-#     types: [published]
-on: [push]
+on:
+  release:
+    types: [published]
 jobs:
+  # Separate building from publishing — it makes sure that any scripts
+  # maliciously injected into the build or test environment won't be able
+  # to elevate privileges while flying under the radar.
   build:
     runs-on: ubuntu-latest
     steps:
